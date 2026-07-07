@@ -1,0 +1,11 @@
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.coverage.run]
+source = ["stadium_ops"]
+omit = [
+    "tests/*",
+    "stadium_ops/main.py",
+    "stadium_ops/utils/accessibility.py"
+]
